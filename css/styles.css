@@ -5,6 +5,8 @@ html {
 body {
 	text-align: center;
 	background-color: #f4f4f4;
+	transition-property: background-color;
+	transition-duration: 1s;
 }
 
 div {
