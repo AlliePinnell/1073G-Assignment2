@@ -1,47 +1,65 @@
 html {
+	/* Sets font for entire HTML document */
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
+	/* Centers text within body element */
 	text-align: center;
+	/* Sets background color */
 	background-color: #f4f4f4;
+	/* background transition */
 	transition-property: background-color;
 	transition-duration: 1s;
 }
 
 div {
+	/* Adds margin below each div element */
 	margin-bottom: 20px;
 }
 
 #myStudentId {
+	/* Sets font size */
 	font-size: 150%;
+	/* Makes font bold */
 	font-weight: bold;
+	/* Sets text color */
 	color: black;
 }
 
 input,
 select {
+	/* Adds padding inside input and select elements */
 	padding: 10px;
+	/* Rounds corners of input and select elements */
 	border-radius: 10px;
+	/* Sets width of input and select elements */
 	width: 100%;
+	/* Sets a maximum width for input and select elements */
 	max-width: 150px;
 }
 
 button {
+	/* Sets font for button elements */
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	/* Adds padding inside button elements */
 	padding: 10px;
+	/* Sets text color for button elements */
 	color: black;
+	/* Makes font bold for button elements */
 	font-weight: bold;
+	/* Rounds corners of button elements */
 	border-radius: 10px;
 }
 
 button.custColor {
+	/* Sets a custom background color for 'custColor' buttons */
 	background-color: pink;
 }
 
 button.randColor {
 	background-image: linear-gradient(
-		/* Direction of the gradient from left to right */ to right,
+		/* Direction of gradient from left to right */ to right,
 		/* Start with purple */ rgba(128, 0, 128, 0.5),
 		/* Transition to cyan */ rgba(0, 255, 255, 0.5),
 		/* Then to green */ rgba(0, 128, 0, 0.5),
@@ -51,5 +69,8 @@ button.randColor {
 }
 
 img {
+	/* Sets minimum width for image elements */
+	min-width: 50%;
+	/* Sets maximum width for image elements */
 	max-width: 50%;
 }

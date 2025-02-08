@@ -8,8 +8,10 @@ const images = document.getElementById("images");
 
 // function to change bg color from user input and add student id
 function changeCustomColor() {
+	// Set the student ID text content
 	myStudentId.textContent = "Allie Pinnell - 1268163";
 
+	// Change background color based on customNumber value
 	if (customNumber.value < 0 || customNumber.value > 100) {
 		document.body.style.backgroundColor = "red";
 	} else if (customNumber.value >= 0 && customNumber.value <= 20) {
@@ -27,6 +29,7 @@ function changeCustomColor() {
 
 // function to change bg color from random no.
 function changeRandomColor() {
+	// Generate a random number between 1 and 100 and set it to customNumber
 	customNumber.value = Math.floor(Math.random() * 100) + 1;
 	changeCustomColor();
 }
@@ -34,7 +37,6 @@ function changeRandomColor() {
 // function to generate options for select list
 function addList() {
 	const images = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
-
 	const selectElement = document.getElementById("imageSelect");
 
 	// Tip: you might have to check length condition so that the list does not keep growing when clicked
